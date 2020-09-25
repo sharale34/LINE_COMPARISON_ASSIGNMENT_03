@@ -21,15 +21,19 @@ public class LineComparison {
 		//usage of Wrapper class
 		Double obj1 = new Double(Length1);
 		Double obj2 = new Double(Length2);
-		if(obj1.equals(obj2))
+		int comp=obj1.compareTo(obj2);
+		if(comp==0)
 		{
 			System.out.println("Both the lines have equal Length.");
 		}
+		else if(comp>0)
+		{
+			System.out.println("Length of line1 is greater than line2.");
+		}
 		else
 		{
-			System.out.println("Lines are not equal.");
+			System.out.println("Length of line1 is less than line2.");
 		}
-     
 	}
 
 }
